@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+  ~ Created by Cristian Gonzalez on 27/01/24 22:59
+  ~  Copyright (c) NetFree Mexico 2024 . All rights reserved.
+  -->
+
+<shape
+    android:shape="rectangle"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid
+        android:color="#ffffff" />
+    <corners
+        android:radius="18.0dip" />
+</shape>
+

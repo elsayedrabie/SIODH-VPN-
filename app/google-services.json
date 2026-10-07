@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1029136509980",
+    "project_id": "socksfast-99da8",
+    "storage_bucket": "socksfast-99da8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1029136509980:android:33fab6d4837942df4283d9",
+        "android_client_info": {
+          "package_name": "com.socksfast.vpn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1029136509980-qjdu8e172csemg00qsl7ps8ldg9eeadg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAb6AYodtDMRAZlGbfr6ac-wgOMVVXix_c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1029136509980-qjdu8e172csemg00qsl7ps8ldg9eeadg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

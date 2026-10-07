@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+  ~ Created by Cristian Gonzalez on 27/01/24 22:59
+  ~  Copyright (c) NetFree Mexico 2024 . All rights reserved.
+  -->
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:id="@android:id/background">
+		<shape android:shape="ring" android:innerRadiusRatio="3.0" android:useLevel="false">
+			<solid android:color="@color/colorAccent" />
+		</shape>
+	</item>
+	<item android:id="@android:id/progress">
+		<rotate android:fromDegrees="0.0" android:toDegrees="360.0">
+			<shape android:shape="ring" android:innerRadiusRatio="3.0" android:useLevel="true">
+				<solid android:color="#202020" />
+			</shape>
+		</rotate>
+	</item>
+</layer-list>

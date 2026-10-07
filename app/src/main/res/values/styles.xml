@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by Cristian Gonzalez on 27/01/24 22:59
+  ~  Copyright (c) NetFree Mexico 2024 . All rights reserved.
+  -->
+
+<resources xmlns:tools="http://schemas.android.com/tools">
+	
+	
+	<!-- Style geral do app -->
+   <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+		<item name="android:fontFamily">@font/ubuntur</item>
+		<item name="android:textSize">15sp</item>
+		<item name="colorPrimary">@color/blue</item>
+	   <item name="colorPrimaryDark">@color/blue</item>
+	
+		<item name="colorAccent">@color/colorAccent</item>
+		<item name="preferenceTheme">@style/AppPreference</item>
+		<item name="alertDialogTheme">@style/AppAlertDialog</item>
+	
+		<item name="android:textColor">@color/black</item>
+		<item name="android:textColorPrimary">@color/black</item>
+		<item name="android:textColorSecondary">@color/black</item>
+	   <item name="colorSecondary">@color/colorAccent</item>
+		<item name="android:textColorHint">@color/colorText</item>
+		<item name="android:navigationBarColor">@color/blue</item>
+		<item name="android:popupMenuStyle">@style/MyPopupMenu</item>
+		<item name="buttonTint">@color/colorText</item>
+	</style>
+	   
+    	<style name="Widget.App.CircularProgressIndicator" parent="Widget.Material3.CircularProgressIndicator">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.CircularProgressIndicator</item>
+        <item name="trackThickness">20dp</item>
+    </style>
+
+      <style name="MainBg">
+        <item name="android:background">@drawable/back_light_gradient</item>
+    </style>
+    <style name="CircleBorderBg">
+        <item name="android:background">@drawable/bg_circle_border_light</item>
+    </style>
+    <style name="CircleBg">
+        <item name="android:background">@drawable/disconnect_light</item>
+    </style>
+    
+   <style name="SpinnerBg">
+        <item name="android:textColor">#FF111111</item>
+        <item name="android:background">@drawable/bg_spinner_light</item>
+    </style>
+    
+      <style name="AppThemeMaterial" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryDark">@color/blue</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    
+    
+    <style name="ThemeOverlay.App.CircularProgressIndicator" parent="Widget.Material3.CircularProgressIndicator">
+      	<item name="colorAccent">@color/colorAccent</item>
+		
+    </style>
+	
+<style name="AlertLoadingAds" parent="Theme.AppCompat.Light.Dialog.Alert">
+		<item name="android:windowBackground">@color/transparent</item>
+	</style>
+
+	
+	
+   
+	<!-- Alert Dialog -->
+	<style name="AppAlertDialog" parent="@style/ThemeOverlay.MaterialComponents.Dialog.Alert">
+        <item name="android:textColor">#000000</item>
+		<item name="android:textColorPrimary">#000000</item>
+		<item name="android:textColorSecondary">#000000</item>
+		<item name="android:textColorHint">#000000</item>
+		<item name="buttonBarNegativeButtonStyle">@style/NegativeButtonStyle</item>
+		<item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
+		<item name="buttonBarNeutralButtonStyle">@style/NeutralButtonStyle</item>
+	</style>
+	<style name="NegativeButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+		<item name="android:textColor">#000000</item>
+	</style>
+
+	<style name="NeutralButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+		<item name="android:textColor">#000000</item>
+	</style>
+
+	<style name="PositiveButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+		<item name="android:textColor">#000000</item>
+	</style>
+	
+	
+
+    <style name="AlertDialogTheme" parent="Theme.MaterialComponents.Light.Dialog.Alert">
+        <item name="android:background">#2a3839</item>
+        <item name="buttonBarNegativeButtonStyle">@style/NegativeButtonStylewith</item>
+		<item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStylewith</item>
+		<item name="buttonBarNeutralButtonStyle">@style/NeutralButtonStylewith</item>
+    </style>
+
+    <style name="NegativeButtonStylewith" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+		<item name="android:textColor">@color/colorAccent</item>
+	</style>
+
+	<style name="NeutralButtonStylewith" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+		<item name="android:textColor">@color/colorAccent</item>
+	</style>
+
+	<style name="PositiveButtonStylewith" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+		<item name="android:textColor">@color/colorAccent</item>
+	</style>
+	
+
+    <style name="MyProgressDialog" parent="@android:style/Theme.DeviceDefault.Dialog">
+        <item name="android:fontFamily">@font/ubuntur</item>
+        <item name="android:textColorPrimary">#333333</item>
+        <item name="android:textColorSecondary">#333333</item>
+    </style>
+    
+    <style name="SplashTheme" parent="Theme.Material3.Light.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+		<item name="colorPrimaryDark">#ff101010</item>
+		<item name="colorPrimary">#ff101010</item>
+		<item name="colorPrimaryDark">#ff101010</item>
+        <item name="windowActionBar">false</item>
+		<item name="windowNoTitle">true</item>
+      <item name="android:navigationBarColor">#ff101010</item>
+ </style>
+	
+	 <style name="ThemeOverlay.PopupTheme2" parent="Theme.AppCompat.Light" >
+		 <item name="colorAccent">@color/blue</item>
+		 <item name="android:textColor">#000000</item>
+		 <item name="buttonTint">@color/blue</item>
+        <item name="android:colorBackground">@color/white</item>
+
+    </style>
+	<!-- Preference Theme -->
+	<style name="AppPreference"
+        parent="PreferenceThemeOverlay">
+		<item name="android:textSize">14sp</item>
+		<item name="buttonTint">@color/colorAccent</item>
+		<item name="android:textColor">#909090</item>
+		<item name="android:textColorPrimary">#ffffff</item>
+		<item name="android:textColorSecondary">#ffffff</item>
+	</style>
+	
+	
+<!-- Toolbar theme -->
+	<style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+		<item name="android:textColorPrimary">@color/white</item>
+		<item name="actionMenuTextColor">@android:color/holo_green_light</item>
+		<item name="colorAccent">@color/gray</item>
+		<item name="colorControlNormal">@color/white</item>
+		<item name="colorControlActivated">@color/blue</item>
+		<item name="colorControlHighlight">@color/gray2</item>
+
+	</style>
+    
+	
+	
+
+   
+
+  
+	
+	<style name="MyPopupMenu" parent="@style/Widget.AppCompat.PopupMenu">
+		<item name="android:dropDownHorizontalOffset">-4dp</item>
+		<item name="android:dropDownVerticalOffset">4dp</item>
+	</style>
+	<!-- Necessario para o modo noturno-->
+<style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+	
+	<style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+		<item name="android:textColor">@color/white</item>
+		<item name="android:textSize">16.0dip</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+    
+    <style name="AppThemeLogin" parent="Theme.AppCompat.DayNight.NoActionBar">
+		<item name="colorAccent">@color/colorAccent</item>
+		<item name="alertDialogTheme">@style/AppAlertDialogLogin</item>
+		
+		<item name="android:textColor">@color/colorText</item>
+		<item name="android:textColorHint">@color/colorText</item>
+		
+		<item name="buttonTint">@color/colorText</item>
+	</style>
+	
+	<!-- Alert Dialog -->
+<style name="AppAlertDialogLogin"
+        parent="Theme.MaterialComponents.Light.Dialog.Alert">
+	<item name="colorAccent">@color/blue</item>
+		<item name="android:textColor">#000000</item>
+		<item name="android:textColorHint">@color/colorText</item>
+		<item name="buttonTint">@color/colorText</item>
+		<item name="android:background">@color/white</item>
+	</style>
+	
+	
+
+  
+   
+    
+ 
+	
+	<style name="TabTitleTheme" parent="@style/TextAppearance.Design.Tab">
+		<item name="android:typeface">serif</item>
+		<item name="android:fontFamily">@font/ubuntur</item>
+		<item name="android:letterSpacing">0.1</item>
+
+	</style>
+	
+	
+
+    <style name="CustomOutlinedBox" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/red</item>
+        <item name="android:textColorHint">#ffffff</item>
+		<item name="android:textColorSecondary">@color/colorAccent</item>
+		<item name="colorSecondary">@color/colorAccent</item>
+        <item name="hintTextColor">#ffffff</item>
+        <item name="android:textColorHint">#ffffff</item>
+    </style>
+    
+    <style name="MatButtonSourceCode" parent="Theme.MaterialComponents">
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+	</style>
+	
+    <string name="bits_per_second">%.0f bit/s</string>
+    <string name="kbits_per_second">%.1f kbit/s</string>
+    <string name="mbits_per_second">%.1f Mbit/s</string>
+    <string name="gbits_per_second">%.1f Gbit/s</string>
+
+    <string name="volume_byte">%.0f B</string>
+    <string name="volume_kbyte">%.1f kB</string>
+    <string name="volume_mbyte">%.1f MB</string>
+    <string name="volume_gbyte">%.1f GB</string>
+	
+	
+</resources>

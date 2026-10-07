@@ -1,0 +1,29 @@
+<!--
+  ~ Created by Cristian Gonzalez on 27/01/24 22:59
+  ~  Copyright (c) NetFree Mexico 2024 . All rights reserved.
+  -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <item
+        android:id="@+id/CopyLogs"
+        android:icon="@drawable/copy"
+		app:showAsAction="always"
+        android:title="Copy Logs">
+    </item>
+	<item
+        android:id="@+id/miLimparLogs"
+		android:icon="@drawable/delete"
+		app:showAsAction="always"
+        android:title="@string/clear_logs"/>
+	<item
+        android:id="@+id/Share_Logs"
+        android:icon="@drawable/share"
+		app:showAsAction="always"
+        android:title="Share Logs">
+    </item>
+    
+</menu>
+
+

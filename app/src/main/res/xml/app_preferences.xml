@@ -1,0 +1,86 @@
+<!--
+  ~ Created by Cristian Gonzalez on 27/01/24 22:59
+  ~  Copyright (c) NetFree Mexico 2024 . All rights reserved.
+  -->
+
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:key="screenMain">
+
+
+    <androidx.preference.CheckBoxPreference
+        android:defaultValue="true"
+        android:key="vibrate"
+        android:summary="Vibrate when connection status changes"
+        android:title="Vibrate"
+        app:iconSpaceReserved="true"
+        app:isPreferenceVisible="false" />
+    <androidx.preference.CheckBoxPreference
+        android:defaultValue="true"
+        android:key="udpForward"
+        android:summary="@string/summary_forward_udp"
+        android:title="@string/title_forward_udp"
+        app:iconSpaceReserved="true" />
+
+    <com.socksfast.sockshttp.view.SummaryEditTextPreference
+        android:dialogLayout="@layout/pref_dialog_edittext_fix"
+        android:key="udpResolver"
+        android:singleLine="true"
+        android:summary="127.0.0.1:7300"
+        android:dependency="udpForward"
+        android:title="@string/title_resolver_udp"
+        app:iconSpaceReserved="true" />
+
+
+    <androidx.preference.CheckBoxPreference
+        android:defaultValue="true"
+        android:key="dnsForward"
+        android:summary="@string/summary_forward_dns"
+        android:title="@string/title_forward_dns"
+        app:iconSpaceReserved="true" />
+
+
+    <com.socksfast.sockshttp.view.SummaryEditTextPreference
+        android:dialogLayout="@layout/pref_dialog_edittext_fix"
+        android:dialogMessage="@string/dialog_message_dns_primary"
+        android:key="dnsResolver"
+        android:singleLine="true"
+        android:summary="8.8.8.8"
+        android:dependency="dnsForward"
+        android:title="@string/title_dns_primary"
+        app:iconSpaceReserved="true" />
+
+    <com.socksfast.sockshttp.view.SummaryEditTextPreference
+        android:dialogLayout="@layout/pref_dialog_edittext_fix"
+        android:key="dnsResolver2"
+        android:singleLine="true"
+        android:summary="8.8.4.4"
+        android:dependency="dnsForward"
+        android:title="Secondary DNS"
+        app:iconSpaceReserved="true" />
+
+
+    <com.socksfast.sockshttp.view.SummaryEditTextPreference
+        android:dialogLayout="@layout/pref_dialog_number"
+        android:key="pingerSSH"
+        android:maxLength="3"
+        android:singleLine="true"
+        android:summary="@string/no_value"
+        android:title="@string/title_ping_time"
+        app:iconSpaceReserved="true"
+        app:isPreferenceVisible="false" />
+
+    <androidx.preference.CheckBoxPreference
+        android:defaultValue="true"
+        android:key="autoClearLogs"
+        android:summary="@string/summary_auto_clear_log"
+        android:title="@string/title_auto_clear_log"
+        app:iconSpaceReserved="true" />
+
+    <androidx.preference.Preference
+        android:key="screenAdvancedSettings"
+        android:title="@string/category_advanced_settings"
+        app:fragment="com.socksfast.sockshttp.preference.SettingsAdvancedPreference"
+        app:iconSpaceReserved="true" />
+
+</androidx.preference.PreferenceScreen>

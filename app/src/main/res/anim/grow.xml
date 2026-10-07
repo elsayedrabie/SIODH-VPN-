@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+  ~ Created by Cristian Gonzalez on 27/01/24 22:59
+  ~  Copyright (c) NetFree Mexico 2024 . All rights reserved.
+  -->
+
+<set xmlns:android="http://schemas.android.com/apk/res/android" android:shareInterpolator="false">
+	<scale 
+		android:interpolator="@android:anim/cycle_interpolator"
+		android:duration="10"
+		android:pivotX="50.0%" 
+		android:pivotY="100.0%" 
+		android:fromXScale="0.9" 
+		android:toXScale="1.0" 
+		android:fromYScale="0.9"
+		
+        
+        android:toDegrees="10"
+		android:toYScale="1.0" />
+	<alpha 
+		android:interpolator="@android:anim/cycle_interpolator"
+		android:duration="10" 
+		
+		android:fromAlpha="0.0" 
+		android:toAlpha="19" />
+</set>

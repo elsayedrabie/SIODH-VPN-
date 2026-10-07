@@ -1,0 +1,11 @@
+<!--
+  ~ Created by Cristian Gonzalez on 27/01/24 22:59
+  ~  Copyright (c) NetFree Mexico 2024 . All rights reserved.
+  -->
+
+<alpha
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:fromAlpha="0.0"
+	android:toAlpha="1.0"
+	android:duration="1000" />
+

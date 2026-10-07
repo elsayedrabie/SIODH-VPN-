@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by Cristian Gonzalez on 27/01/24 22:59
+  ~  Copyright (c) NetFree Mexico 2024 . All rights reserved.
+  -->
+
+<androidx.cardview.widget.CardView
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_height="wrap_content"
+     android:layout_width="match_parent"
+     app:cardElevation="3dp"
+     app:cardUseCompatPadding="true"
+     android:layout_marginLeft="20dp"
+     android:layout_marginRight="20dp"
+     app:cardBackgroundColor="#202020"
+     app:cardCornerRadius="@dimen/size_16"
+     android:id="@+id/main_card">
+    
+      <androidx.constraintlayout.widget.ConstraintLayout
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:padding="@dimen/size_15">
+
+    <RelativeLayout
+         android:layout_height="30dp"
+         android:layout_width="30dp"
+         app:layout_constraintTop_toTopOf="parent"
+         android:layout_marginLeft="10dp"
+       android:background="@drawable/dialog_circle_bg"
+         app:layout_constraintEnd_toEndOf="parent"
+         
+         android:id="@+id/appButton1">
+
+        <ImageView
+             android:layout_height="28dp"
+             android:layout_width="28dp"
+             android:layout_centerInParent="true"
+             android:background="@drawable/ic_close" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+         android:layout_height="wrap_content"
+         android:layout_width="fill_parent"
+         android:gravity="center"
+         android:orientation="vertical">
+
+        <ImageView
+             android:layout_height="130dp"
+             android:layout_width="match_parent"
+             android:src="@drawable/xx"
+             android:layout_marginTop="39dp"
+             android:layout_gravity="center" />
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:textAppearance="?android:textAppearanceMedium"
+             android:textSize="17.0dip"
+             android:textColor="@color/colorAccent"
+             android:layout_marginTop="0dp"
+             android:id="@+id/notiftext1"
+             android:text="NOTA DE ACTUALIZACIÓN"
+             android:textStyle="bold" />
+
+        <LinearLayout
+             android:layout_height="wrap_content"
+             android:layout_width="fill_parent"
+             android:gravity="center"
+             android:orientation="horizontal"
+             android:layout_marginTop="5dp">
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:textAppearance="?android:textAppearanceMedium"
+                 android:textSize="15.0dip"
+                 android:textColor="#909090"
+                 android:layout_marginTop="0dp"
+                 android:text="Config Version: "
+                 android:textStyle="bold" />
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:textAppearance="?android:textAppearanceMedium"
+                 android:textSize="14.0dip"
+                 android:textColor="@color/colorAccent"
+                 android:layout_marginTop="0dp"
+                android:layout_gravity="center"
+                 android:id="@+id/config_v"
+                 android:text="100"
+                 android:textStyle="bold"
+                 android:gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+             android:layout_height="wrap_content"
+             android:layout_width="fill_parent"
+             android:gravity="center"
+             android:orientation="vertical">
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:autoLink="web"
+                 android:layout_marginBottom="10.0dip"
+                 android:gravity="center"
+                 android:textColorLink="@color/colorPrimary"
+                 android:textSize="13.0dip"
+                 android:textColor="#909090"
+                 android:layout_marginTop="15.0dip"
+                 android:id="@+id/confimsg" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+             android:layout_height="wrap_content"
+             android:layout_width="fill_parent"
+             android:layout_marginBottom="10.0dip"
+             android:gravity="center_vertical"
+             android:layout_marginTop="10.0dip">
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

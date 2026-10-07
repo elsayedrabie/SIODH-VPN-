@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Created by Cristian Gonzalez on 27/01/24 22:59
+  ~  Copyright (c) NetFree Mexico 2024 . All rights reserved.
+  -->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+	
+	<item
+		android:state_enabled="false"
+        android:color="@color/colorTextDisabled"
+	/>
+
+    <item
+        android:state_enabled="true"
+        android:color="@color/colorTextEnabled"
+	/>
+
+	<item
+		android:color="@color/colorTextEnabled"
+		android:state_checked="true"
+	/>
+
+	<item
+		android:color="@color/colorTextDisabled"
+		android:state_checked="false"
+	/>
+	
+</selector>

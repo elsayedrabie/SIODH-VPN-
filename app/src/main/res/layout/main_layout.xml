@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <!--
+  ~ Created by Cristian Gonzalez on 27/01/24 22:59
+  ~  Copyright (c) NetFree Mexico 2024 . All rights reserved.
+  -->
+
+<LinearLayout
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_height="fill_parent"
+             android:layout_width="fill_parent"
+             android:background="@color/blue"
+             android:orientation="vertical">
+
+</LinearLayout>
